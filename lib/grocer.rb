@@ -11,4 +11,4 @@ def consolidate_cart(cart)
 end
 
 
-update()
+{}.update(hash)[:count] = 1
