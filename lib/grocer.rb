@@ -7,7 +7,7 @@ def consolidate_cart(cart)
     if find_item_by_name_in_collection(hash[:name], sorted_cart)
       sorted_cart[] ???
     else
-      sorted_cart.push(hash)
+      sorted_cart.push({}.update(hash)[:count] = 1)
 end
 
 
