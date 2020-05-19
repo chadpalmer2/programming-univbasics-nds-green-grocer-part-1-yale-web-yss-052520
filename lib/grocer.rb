@@ -1,8 +1,5 @@
 def find_item_by_name_in_collection(name, collection)
-  collection.find do |hash|
-    if hash[:item] == name
-      return hash
-    end
+  collection.find { |hash| hash[:item] == name
   end
 end
 
