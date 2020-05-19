@@ -5,7 +5,8 @@ end
 def consolidate_cart(cart)
   cart.each_with_object([]) do |hash, sorted_cart|
     if find_item_by_name_in_collection(hash[:name], sorted_cart)
-      sorted_cart.each do
+      sorted_cart.each do |item|
+        if item[:name]
     else
       updated_item = {}.update(hash)
       updated_item[:count] = 1
