@@ -3,7 +3,7 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  cart.each_with_object([]) { |
+  cart.each_with_object([]) { |hash, sorted_cart|
 end
 
 
